@@ -1,0 +1,23 @@
+/* Page Catalogue */
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.filters { display: flex; flex-wrap: wrap; gap: .6rem; }
+.filter-btn { padding: .5rem 1.1rem; border-radius: 999px; border: 1px solid #CBD5E1; background: #fff; color: var(--text); font: inherit; font-weight: 500; cursor: pointer; transition: all .2s; }
+.filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+.filter-btn.active { background: var(--grad); border-color: transparent; color: #fff; }
+
+.search { padding: .6rem 1rem; border: 1px solid #CBD5E1; border-radius: 999px; font: inherit; min-width: 240px; }
+.search:focus { outline: 2px solid var(--cyan); border-color: transparent; }
+
+.result-count { text-align: left; color: var(--muted); margin-bottom: 1.5rem; }
+
+.product { display: flex; flex-direction: column; }
+.product .thumb { height: 120px; border-radius: 10px; background: linear-gradient(135deg, #E0F2FE, #DBEAFE); display: grid; place-items: center; font-size: 3rem; margin-bottom: 1rem; }
+.product h3 { font-size: 1.1rem; }
+.product .cat { font-family: 'JetBrains Mono', monospace; font-size: .8rem; color: var(--blue); margin-bottom: .4rem; }
+.product p { flex: 1; margin-bottom: 1rem; }
+.badge { display: inline-block; align-self: flex-start; font-size: .75rem; font-weight: 600; padding: .2rem .7rem; border-radius: 999px; background: #DCFCE7; color: #166534; margin-bottom: .6rem; }
+.badge.reco { background: #FEF3C7; color: #92400E; }
+.product .btn { text-align: center; }
+
+.empty { padding: 3rem 0; color: var(--muted); display: none; }
