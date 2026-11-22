@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | PRS</title>
+  <meta name="description" content="Contactez PRS pour un devis : vente, échange, développement ou réparation d'équipements informatiques.">
+  <link rel="icon" href="img/logo-prs.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="img/logo-prs.svg" alt="Logo PRS" height="44"></a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav id="menu" class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Parlons de votre <span class="grad">besoin</span></h1>
+        <p>Une question, un devis, une réparation ? Écrivez-nous, nous répondons rapidement.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- COORDONNÉES : À REMPLIR AVEC LES VRAIES INFORMATIONS -->
+        <div>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="icon">📧</span>
+              <div><h3>E-mail</h3><p>prs@gmail.com</p></div> <!-- À REMPLIR -->
+            </div>
+            <div class="info-item">
+              <span class="icon">📞</span>
+              <div><h3>Téléphone</h3><p>+237 674930263</p></div> <!-- À REMPLIR -->
+            </div>
+            <div class="info-item">
+              <span class="icon">📍</span>
+              <div><h3>Adresse</h3><p>Rue : A035, quartier : Marche A, ville : Bafoussam, pays : CAMEROUN</p></div> <!-- À REMPLIR -->
+            </div>
+            <div class="info-item">
+              <span class="icon">🕒</span>
+              <div><h3>Horaires</h3><p>Lundi - Vendredi : 8h - 18h<br>Samedi : 9h - 14h</p></div> <!-- À REMPLIR -->
+            </div>
+          </div>
+
+          <!-- CARTE : remplace ce bloc par le code « Intégrer une carte » de Google Maps -->
+          <div class="map-box">
+            Emplacement de la carte Google Maps
+            <!-- <iframe src="COLLE_ICI_LE_LIEN_GOOGLE_MAPS" loading="lazy"></iframe> -->
+          </div>
+        </div>
+
+        <!-- FORMULAIRE -->
+        <div class="form-box">
+          <h2>Envoyez-nous un message</h2>
+          <form id="contact-form" novalidate>
+            <div class="row">
+              <div class="field">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" autocomplete="name">
+                <span class="error"></span>
+              </div>
+              <div class="field">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+                <span class="error"></span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+                <span class="error"></span>
+              </div>
+              <div class="field">
+                <label for="sujet">Sujet *</label>
+                <select id="sujet" name="sujet">
+                  <option value="">Choisir...</option>
+                  <option>Vente</option>
+                  <option>Échange</option>
+                  <option>Développement</option>
+                  <option>Réparation</option>
+                  <option>Autre</option>
+                </select>
+                <span class="error"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message"></textarea>
+              <span class="error"></span>
+            </div>
+
+            <button type="submit" class="btn">Envoyer le message</button>
+            <p class="success" id="succes">Merci ! Votre messagerie s'est ouverte avec votre message : il ne reste qu'à l'envoyer.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="img/logo-prs.svg" alt="Logo PRS" height="40">
+        <p>Vente, échange, développement et réparation d'équipements informatiques.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>687904567</h4>
+        <p>prs@gmail.com</p>
+        <p>+237 687903454</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> PRS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

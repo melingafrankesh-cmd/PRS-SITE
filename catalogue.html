@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue | PRS</title>
+  <meta name="description" content="Catalogue PRS : ordinateurs, composants, périphériques et matériel réseau, neufs et reconditionnés.">
+  <link rel="icon" href="img/logo-prs.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/catalogue.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="img/logo-prs.svg" alt="Logo PRS" height="44"></a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav id="menu" class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html" class="active">Catalogue</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Nos <span class="grad">équipements</span></h1>
+        <p>Matériel informatique neuf et reconditionné pour les entreprises, les étudiants et les professionnels.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="toolbar">
+          <div class="filters">
+            <button class="filter-btn active" data-cat="Tous">Tous</button>
+            <button class="filter-btn" data-cat="Ordinateurs">Ordinateurs</button>
+            <button class="filter-btn" data-cat="Composants">Composants</button>
+            <button class="filter-btn" data-cat="Périphériques">Périphériques</button>
+            <button class="filter-btn" data-cat="Réseau">Réseau</button>
+          </div>
+          <input type="search" id="recherche" class="search" placeholder="Rechercher un produit..." aria-label="Rechercher un produit">
+        </div>
+
+        <p class="result-count" id="compteur"></p>
+
+        <div class="grid grid-4" id="grille"></div>
+        <p class="empty" id="vide">Aucun produit ne correspond à votre recherche.</p>
+
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container">
+        <h2>Vous ne trouvez pas votre équipement ?</h2>
+        <p class="sub">Dites-nous ce que vous cherchez, nous le trouvons pour vous.</p>
+        <a href="contact.html" class="btn">Nous contacter</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="img/logo-prs.svg" alt="Logo PRS" height="40">
+        <p>Vente, échange, développement et réparation d'équipements informatiques.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>contact@prs.com</p>
+        <p>+000 00 00 00 00</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> PRS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/catalogue.js"></script>
+</body>
+</html>

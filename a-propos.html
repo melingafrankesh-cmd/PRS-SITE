@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>À propos | PRS</title>
+  <meta name="description" content="Découvrez PRS, entreprise de technologie et d'informatique : notre mission, nos valeurs et notre équipe.">
+  <link rel="icon" href="img/logo-prs.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- EN-TÊTE -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><img src="img/logo-prs.svg" alt="Logo PRS" height="44"></a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav id="menu" class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html" class="active">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="tag">&lt; À propos /&gt;</p>
+        <h1>Qui est <span class="grad">PRS</span> ?</h1>
+        <p>Une entreprise de technologie et d'informatique au service des professionnels et des étudiants.</p>
+      </div>
+    </section>
+
+    <!-- PRÉSENTATION -->
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Notre histoire</h2>
+          <p>PRS est née d'un constat simple : trouver du matériel informatique fiable, des conseils techniques et un service de réparation au même endroit n'est pas toujours facile.</p>
+          <p>Nous vendons, échangeons, développons et réparons des équipements informatiques pour les entreprises du secteur IT, les étudiants en informatique et tous les acteurs du numérique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION ET VALEURS -->
+    <section class="section section-light">
+      <div class="container">
+        <h2>Notre mission et nos valeurs</h2>
+        <div class="grid grid-4">
+          <article class="card">
+            <div class="icon">🛡️</div>
+            <h3>Fiabilité</h3>
+            <p>Du matériel testé et des réparations garanties.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🚀</div>
+            <h3>Innovation</h3>
+            <p>Des solutions modernes, au rythme des évolutions technologiques.</p>
+          </article>
+          <article class="card">
+            <div class="icon">💡</div>
+            <h3>Accessibilité</h3>
+            <p>Des prix adaptés, surtout pour les étudiants.</p>
+          </article>
+          <article class="card">
+            <div class="icon">🤝</div>
+            <h3>Proximité</h3>
+            <p>Une équipe à l'écoute, des conseils clairs et personnalisés.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉQUIPE -->
+    <section class="section">
+      <div class="container">
+        <h2>Notre équipe</h2>
+        <p class="sub">Des passionnés d'informatique à votre service.</p>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="avatar">AB</div>
+            <h3>Nom Prénom</h3>
+            <p class="role">Directeur général</p>
+            <p>Pilote la stratégie et la relation avec les clients.</p>
+          </article>
+          <article class="card">
+            <div class="avatar">CD</div>
+            <h3>Nom Prénom</h3>
+            <p class="role">Responsable technique</p>
+            <p>Supervise la vente, la réparation et le matériel.</p>
+          </article>
+          <article class="card">
+            <div class="avatar">EF</div>
+            <h3>Nom Prénom</h3>
+            <p class="role">Développeur</p>
+            <p>Conçoit les sites web et les applications sur mesure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container">
+        <h2>Travaillons ensemble</h2>
+        <p class="sub">Parlez-nous de votre projet ou de votre besoin.</p>
+        <a href="contact.html" class="btn">Nous contacter</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <img src="img/logo-prs.svg" alt="Logo PRS" height="40">
+        <p>Vente, échange, développement et réparation d'équipements informatiques.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="services.html">Services</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>contact@prs.com</p>
+        <p>+000 00 00 00 00</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> PRS. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
